@@ -8,17 +8,6 @@ import {POKEMONS} from './mock-pokemons';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
 
-   pokemons: Pokemon[];
-   title: string = "Pokemons";
-   value: string ="";
-
-  ngOnInit() {
-    this.pokemons = POKEMONS;
-  }
-  selectPokemon(pokemon: Pokemon) {
-    console.log("Vous avez cliquer sur " + pokemon.name);
-  }
-  
 }
